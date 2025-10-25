@@ -267,3 +267,5 @@ Se deberia ver el texto original:
 Hola, este es un mensaje secreto de prueba.
 ```
 
+## Ejemplo
+![Alt text](foto.jpg "Optional title")
