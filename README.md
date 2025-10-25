@@ -163,8 +163,6 @@ Cumple con el requerimiento final: escribir el archivo descifrado en un nuevo ar
 |Descifrar archivo	| cipher.init(Cipher.DECRYPT_MODE, secret, iv)
 |Verificar integridad comparando hashes | Arrays.equals(hash, newHash)
 
-
-
 ### El código cumple todos los requisitos del proyecto:
 
 Usa PBKDF2 + AES-256 + SHA-256, todos algoritmos criptográficamente seguros.
@@ -174,6 +172,19 @@ Aplica buenas prácticas (uso de salt, IV aleatorio y verificación de integrida
 Permite cifrar y descifrar archivos de cualquier tipo.
 
 Es reproducible y verificable fácilmente desde consola.
+
+## Conclusion
+El desarrollo de este proyecto permitió comprender de manera práctica cómo aplicar los principios de la **criptografía moderna** en la protección de información digital.  
+Se logró implementar un sistema funcional que garantiza la **confidencialidad (AES)**, **integridad (SHA-256)** y **autenticidad derivada de la contraseña (PBKDF2)**.  
+Además, el ejercicio reforzó el conocimiento sobre el uso de la **API criptográfica de Java**, la estructura interna de los archivos cifrados y las mejores prácticas de manejo seguro de claves y datos sensibles.  
+Este proyecto demuestra cómo las técnicas criptográficas pueden integrarse en aplicaciones reales para proteger la información de manera efectiva y confiable.
+
+
+## Dificultades Encontradas
+Durante el desarrollo surgieron varios desafíos técnicos:
+- Comprender el uso correcto de **PBKDF2** para derivar claves seguras a partir de contraseñas.  
+- Manejar correctamente los **arreglos binarios (byte arrays)** y su orden al escribir y leer los datos cifrados.  
+
 
 
 
